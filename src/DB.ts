@@ -1,0 +1,36 @@
+const DB = [
+  {
+    cardHeader: 'Сказочное заморское яство',
+    cardTitle: 'Нямушка',
+    cardSubtitle: 'с фуа-гра',
+    cardPortions: '10 порций',
+    cardGifts: 'мышь в подарок',
+    cardComment: '',
+    massaValue: '0,5',
+    description: 'Печень утки разварная с артишоками.',
+    available: true,
+  },
+  {
+    cardHeader: 'Сказочное заморское яство',
+    cardTitle: 'Нямушка',
+    cardSubtitle: 'с рыбой',
+    cardPortions: '40 порций',
+    cardGifts: '2 мыши в подарок',
+    cardComment: '',
+    massaValue: '2',
+    description: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
+    available: true,
+  },
+  {
+    cardHeader: 'Сказочное заморское яство',
+    cardTitle: 'Нямушка',
+    cardSubtitle: 'с курой',
+    cardPortions: '100 порций',
+    cardGifts: '5 мышей в подарок',
+    cardComment: 'заказчик доволен',
+    massaValue: '5',
+    description: 'Филе из цыплят с трюфелями в бульоне.',
+    available: false,
+  },
+];
+export default DB;

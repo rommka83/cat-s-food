@@ -1,0 +1,156 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+
+  /* margin: 0 auto; */
+}
+.card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  padding-top: 21px;
+  padding-left: 51px;
+  border: 4px solid #1698d9;
+  border-radius: 12px;
+  clip-path: polygon(45px 0, 100% 0, 100% 100%, 0 100%, 0 45px);
+  background-color: #f2f2f2;
+  background-image: url(../../../public/Photo.png);
+  background-repeat: no-repeat;
+  background-position: -40px 180%;
+  cursor: pointer;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  width: 4px;
+  height: 65px;
+
+  transform: rotate(45deg);
+  background-color: #1698d9;
+}
+.card-hover {
+  border: 4px solid #2ea8e6;
+}
+.card-hover::before {
+  background-color: #2ea8e6;
+}
+.card_selected {
+  border: 4px solid #d91667;
+}
+.card_selected::before {
+  background-color: #d91667;
+}
+.card_refusal {
+  border: 4px solid #e52e7a;
+}
+.card_refusal::before {
+  background-color: #e52e7a;
+}
+.not-available {
+  border: 4px solid #b3b3b3;
+  color: #b3b3b3;
+}
+.not-available::before {
+  background-color: #b3b3b3;
+}
+.not-available::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.card__header {
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+.card__header_refusal {
+  color: #e62e7a;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+.card__subtitle {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.card__portions,
+.card__gifts,
+.card__comment {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+.card__massa {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1698d9;
+  font-weight: 400;
+  color: #ffffff;
+}
+.massa-hover {
+  background-color: #2ea8e6;
+}
+.massa_selected {
+  background-color: #d91667;
+}
+.massa_refusal {
+  background-color: #e52e7a;
+}
+.not-available-massa {
+  background-color: #b3b3b3;
+}
+.massa__value {
+  font-size: 42px;
+}
+.massa__unit {
+  font-size: 21px;
+}
+.motivation {
+  margin: 14px auto 0;
+  font-size: 13px;
+  line-height: 15px;
+}
+.motivation__content {
+  color: #f2f2f2;
+}
+.motivation__btn {
+  border: none;
+  border-bottom: 1px dashed #1698d9;
+  background-color: transparent;
+  font-weight: 700;
+  color: #1698d9;
+  cursor: pointer;
+}
+.description {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.sadness {
+  color: #ffff66;
+}
